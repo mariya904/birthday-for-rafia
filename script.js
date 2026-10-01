@@ -7,7 +7,7 @@ const CONFIG = {
   yourName: "Mariya Pori",
   birthdayDate: "October 2nd",
   distanceText: "hundreds of miles away",
-  songUrl: "https://open.spotify.com/",
+  songUrl: "https://open.spotify.com/playlist/6bWvoOcX08WlgiBE8uL06R",
 
   heroMessage:
     "You somehow became one of my safest places, even from very far away. So today, I wanted to make you something that feels a little more personal than just another birthday text.",
