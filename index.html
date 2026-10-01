@@ -4,28 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#fff7fb" />
+
   <title>Happy Birthday 💗</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Cache-busted CSS -->
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
+
 <body>
+
+  <!-- =========================
+       INTRO SCREEN
+  ========================== -->
   <div id="intro" class="intro-screen">
     <div class="intro-glow glow-one"></div>
     <div class="intro-glow glow-two"></div>
+
     <div class="intro-card">
-      <p class="eyebrow">A tiny corner of the internet, made just for you</p>
-      <div class="cake" aria-hidden="true">🎂</div>
-      <h1>Happy Birthday, <span data-friend-name>Bestie</span>!</h1>
-      <p class="intro-copy">Distance got in the way of celebrating together, so I brought the celebration to you.</p>
-      <button id="enterBtn" class="primary-btn">Open your surprise ✨</button>
-      <p class="tiny-note">warning: contains memories, emotional damage & too much love</p>
+      <p class="eyebrow">
+        A tiny corner of the internet, made just for you
+      </p>
+
+      <div class="cake" aria-hidden="true">
+        🎂
+      </div>
+
+      <h1>
+        Happy Birthday,
+        <span data-friend-name>Bestie</span>!
+      </h1>
+
+      <p class="intro-copy">
+        Distance got in the way of celebrating together,
+        so I brought the celebration to you.
+      </p>
+
+      <button id="enterBtn" class="primary-btn">
+        Open your surprise ✨
+      </button>
+
+      <p class="tiny-note">
+        warning: contains memories, emotional damage & too much love
+      </p>
     </div>
   </div>
 
-  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
 
+  <!-- =========================
+       CONFETTI CANVAS
+  ========================== -->
+  <canvas
+    id="confettiCanvas"
+    aria-hidden="true">
+  </canvas>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
   <header class="topbar">
-    <a class="brand" href="#home">for <span data-friend-name>Bestie</span> ♡</a>
-    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+
+    <a class="brand" href="#home">
+      for <span data-friend-name>Bestie</span> ♡
+    </a>
+
+    <button
+      id="menuBtn"
+      class="menu-btn"
+      aria-label="Toggle menu">
+      ☰
+    </button>
+
     <nav id="navLinks" class="nav-links">
       <a href="#story">Our Story</a>
       <a href="#memories">Memories</a>
@@ -33,120 +82,415 @@
       <a href="#gifts">Gifts</a>
       <a href="#letter">Letter</a>
     </nav>
+
   </header>
 
+
   <main>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
     <section id="home" class="hero section">
+
       <div class="hero-copy reveal">
-        <p class="eyebrow">Happy Birthday • <span id="birthdayDate">Today</span></p>
-        <h2>Some people feel close even from <span class="accent" id="distanceText">miles away.</span></h2>
-        <p id="heroMessage">And somehow, you’re one of those people.</p>
+
+        <p class="eyebrow">
+          Happy Birthday •
+          <span id="birthdayDate">Today</span>
+        </p>
+
+        <h2>
+          Some people feel close even from
+          <span class="accent" id="distanceText">
+            miles away.
+          </span>
+        </h2>
+
+        <p id="heroMessage">
+          And somehow, you’re one of those people.
+        </p>
+
         <div class="hero-actions">
-          <a class="primary-btn" href="#story">Start here ↓</a>
-          <a id="songBtn" class="ghost-btn" href="#" target="_blank" rel="noreferrer">A playlist for you 🎧</a>
+
+          <a
+            class="primary-btn"
+            href="#story">
+            Start here ↓
+          </a>
+
+          <a
+            id="songBtn"
+            class="ghost-btn"
+            href="#"
+            target="_blank"
+            rel="noreferrer">
+            A playlist for you 🎧
+          </a>
+
         </div>
+
       </div>
+
+
       <div class="hero-polaroid reveal delay-1">
+
         <div class="single-polaroid-wrap">
-    <figure class="single-polaroid">
-        <img src="assets/photo1.jpeg" alt="Our photo">
-        <figcaption>one of my favorite memories ♡</figcaption>
-    </figure>
-</div>
+
+          <figure class="single-polaroid">
+
+            <img
+              src="assets/photo1.jpeg"
+              alt="Our photo"
+            />
+
+            <figcaption>
+              one of my favorite memories ♡
+            </figcaption>
+
+          </figure>
+
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         QUOTE
+    ========================== -->
     <section class="section quote-band reveal">
-      <p>“No matter how far life puts us, you still feel like home.”</p>
+
+      <p>
+        “No matter how far life puts us,
+        you still feel like home.”
+      </p>
+
     </section>
 
+
+    <!-- =========================
+         STORY / TIMELINE
+    ========================== -->
     <section id="story" class="section">
+
       <div class="section-heading reveal">
-        <p class="eyebrow">Chapter One</p>
-        <h2>Our little timeline</h2>
-        <p>From random conversations to becoming one of my favorite parts of life.</p>
+
+        <p class="eyebrow">
+          Chapter One
+        </p>
+
+        <h2>
+          Our little timeline
+        </h2>
+
+        <p>
+          From random conversations to becoming
+          one of my favorite parts of life.
+        </p>
+
       </div>
-      <div id="timeline" class="timeline"></div>
+
+      <div
+        id="timeline"
+        class="timeline">
+      </div>
+
     </section>
 
-    <section id="memories" class="section soft-section">
+
+    <!-- =========================
+         MEMORIES
+    ========================== -->
+    <section
+      id="memories"
+      class="section soft-section">
+
       <div class="section-heading reveal">
-        <p class="eyebrow">Evidence</p>
-        <h2>Moments I refuse to forget</h2>
-        <p>A tiny collection of moments that deserve their own little corner here.</p>
+
+        <p class="eyebrow">
+          Evidence
+        </p>
+
+        <h2>
+          Moments I refuse to forget
+        </h2>
+
+        <p>
+          A tiny collection of moments that deserve
+          their own little corner here.
+        </p>
+
       </div>
-      <div id="memoryGrid" class="memory-grid"></div>
+
+      <div
+        id="memoryGrid"
+        class="memory-grid">
+      </div>
+
     </section>
 
-    <section id="reasons" class="section reasons-section">
+
+    <!-- =========================
+         REASONS
+    ========================== -->
+    <section
+      id="reasons"
+      class="section reasons-section">
+
       <div class="reason-card reveal">
-        <p class="eyebrow">Highly scientific research</p>
-        <h2>Reasons you’re one of my favorite people</h2>
-        <p class="reason-counter">Reason <span id="reasonNumber">1</span> of <span id="reasonTotal">10</span></p>
-        <div id="reasonText" class="reason-text">Loading your first reason...</div>
-        <button id="nextReasonBtn" class="primary-btn">Tell me another →</button>
+
+        <p class="eyebrow">
+          Highly scientific research
+        </p>
+
+        <h2>
+          Reasons you’re one of my favorite people
+        </h2>
+
+        <p class="reason-counter">
+          Reason
+          <span id="reasonNumber">1</span>
+          of
+          <span id="reasonTotal">10</span>
+        </p>
+
+        <div
+          id="reasonText"
+          class="reason-text">
+          Loading your first reason...
+        </div>
+
+        <button
+          id="nextReasonBtn"
+          class="primary-btn">
+          Tell me another →
+        </button>
+
       </div>
+
     </section>
 
-    <section id="gifts" class="section">
+
+    <!-- =========================
+         GIFTS
+    ========================== -->
+    <section
+      id="gifts"
+      class="section">
+
       <div class="section-heading reveal">
-        <p class="eyebrow">For later, too</p>
-        <h2>A few things to open when you need them</h2>
-        <p>Your birthday gift doesn’t have to expire tonight.</p>
+
+        <p class="eyebrow">
+          For later, too
+        </p>
+
+        <h2>
+          A few things to open when you need them
+        </h2>
+
+        <p>
+          Your birthday gift doesn’t have to expire tonight.
+        </p>
+
       </div>
-      <div id="giftGrid" class="gift-grid"></div>
+
+      <div
+        id="giftGrid"
+        class="gift-grid">
+      </div>
+
     </section>
 
+
+    <!-- =========================
+         QUIZ
+    ========================== -->
     <section class="section mini-game-section">
+
       <div class="game-card reveal">
-        <p class="eyebrow">Important examination</p>
-        <h2>How well do you know our friendship?</h2>
-        <div id="quizArea"></div>
+
+        <p class="eyebrow">
+          Important examination
+        </p>
+
+        <h2>
+          How well do you know our friendship?
+        </h2>
+
+        <div id="quizArea">
+        </div>
+
       </div>
+
     </section>
 
-    <section id="letter" class="section letter-section">
+
+    <!-- =========================
+         LETTER
+    ========================== -->
+    <section
+      id="letter"
+      class="section letter-section">
+
       <div class="letter-wrap reveal">
+
         <div class="letter-paper">
-          <p class="letter-date" id="letterDate">October 1</p>
-         <h2>
-  Dear <span class="b-wrap">B<img src="assets/bow.svg" class="bow-img" alt=""></span>huski Shala,
-</h2>
-          <div id="letterBody" class="letter-body"></div>
-          <p class="signature">Always rooting for you,<br/><strong id="yourName">Your Best Friend</strong> ♡</p>
+
+          <p
+            class="letter-date"
+            id="letterDate">
+            October 1
+          </p>
+
+          <h2>
+            Dear
+            <span class="b-wrap">
+              B
+              <img
+                src="assets/bow.svg"
+                class="bow-img"
+                alt=""
+              />
+            </span>huski Shala,
+          </h2>
+
+          <div
+            id="letterBody"
+            class="letter-body">
+          </div>
+
+          <p class="signature">
+            Always rooting for you,
+            <br />
+
+            <strong id="yourName">
+              Your Best Friend
+            </strong>
+            ♡
+          </p>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         FINAL SURPRISE
+    ========================== -->
     <section class="section final-section">
+
       <div class="final-card reveal">
-        <p class="eyebrow">One last thing...</p>
-        <h2>You made it to the end.</h2>
-        <p>Which means you have legally agreed to remain my best friend for another year.</p>
-        <button id="finalSurpriseBtn" class="primary-btn big-btn">Press for your final surprise 🎉</button>
-        <div id="finalMessage" class="final-message hidden">
-          <span class="big-heart">💗</span>
-          <h3>Happy Birthday, <span data-friend-name>Bestie</span>.</h3>
-          <p id="finalText">I hope this year is ridiculously kind to you.</p>
+
+        <p class="eyebrow">
+          One last thing...
+        </p>
+
+        <h2>
+          You made it to the end.
+        </h2>
+
+        <p>
+          Which means you have legally agreed
+          to remain my best friend for another year.
+        </p>
+
+        <button
+          id="finalSurpriseBtn"
+          class="primary-btn big-btn">
+          Press for your final surprise 🎉
+        </button>
+
+        <div
+          id="finalMessage"
+          class="final-message hidden">
+
+          <span class="big-heart">
+            💗
+          </span>
+
+          <h3>
+            Happy Birthday,
+            <span data-friend-name>
+              Bestie
+            </span>.
+          </h3>
+
+          <p id="finalText">
+            I hope this year is ridiculously kind to you.
+          </p>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer>
-    <p>Made with entirely too much affection by <span id="footerName">your best friend</span>.</p>
+
+    <p>
+      Made with entirely too much affection by
+      <span id="footerName">
+        your best friend
+      </span>.
+    </p>
+
   </footer>
 
-  <div id="giftModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="giftModalTitle">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-card">
-      <button class="modal-close" data-close-modal aria-label="Close">×</button>
-      <div id="giftModalIcon" class="modal-icon">🎁</div>
-      <h3 id="giftModalTitle">Open when...</h3>
-      <p id="giftModalText"></p>
+
+  <!-- =========================
+       GIFT MODAL
+  ========================== -->
+  <div
+    id="giftModal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="giftModalTitle">
+
+    <div
+      class="modal-backdrop"
+      data-close-modal>
     </div>
+
+    <div class="modal-card">
+
+      <button
+        class="modal-close"
+        data-close-modal
+        aria-label="Close">
+        ×
+      </button>
+
+      <div
+        id="giftModalIcon"
+        class="modal-icon">
+        🎁
+      </div>
+
+      <h3 id="giftModalTitle">
+        Open when...
+      </h3>
+
+      <p id="giftModalText">
+      </p>
+
+    </div>
+
   </div>
 
-  <script src="script.js"></script>
+
+  <!-- Cache-busted JavaScript -->
+  <script src="script.js?v=4"></script>
+
 </body>
 </html>
