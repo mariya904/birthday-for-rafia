@@ -294,11 +294,17 @@ function renderMemories() {
 
     const hasCopy = Boolean(title || text);
 
+    // Apply special class only to nightstay.jpeg
+    const imageClass = item.image.includes("nightstay.jpeg")
+      ? "show-full-image"
+      : "";
+
     card.innerHTML = `
       <img
         src="${item.image}"
         alt="${escapeHtml(title || "Memory")}"
         loading="lazy"
+        class="${imageClass}"
       />
 
       ${
