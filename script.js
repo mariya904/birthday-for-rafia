@@ -97,7 +97,7 @@ const CONFIG = {
     {
       image: "assets/coxs2.jpeg",
       title: "Favorite human behavior",
-      text: "Couple Poses 100/100"
+      text: "Couple poses 100/100"
     },
     {
       image: "assets/pic.jpeg",
